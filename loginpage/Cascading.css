@@ -1,0 +1,97 @@
+*{
+     //This is the universal selector for having uniform font size font-size: 10px;
+}
+ a.one {
+     padding:8px 16px;
+     border:1px solid #ccc;
+     color:blue;
+     font-weight:bold;
+     font-family: "Lucida Grande", "Segoe Ui";
+     font-size: 16px;
+}
+/*a:link {
+     color:blue ;
+}
+*/
+/* visited link */
+/*a:visited {
+     color: yellow;
+}
+*/
+/* mouse over link */
+ a:hover {
+     color: red;
+}
+/* selected link */
+ a:active {
+     color: yellow;
+}
+ body {
+    /*font-size: 8px;
+    */
+     color: #343d44;
+     font-family: "segoe-ui", "open-sans", tahoma, arial;
+     padding: 0;
+     margin: 10;
+     background-image:url("http://localhost/search/mountain.jpg");
+     background-size: cover;
+}
+ table {
+     margin: 20;
+     font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
+     font-size: 12px;
+}
+ h1 {
+     margin: 15px auto 20;
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 27px;
+}
+ table td {
+     transition: all .5s;
+}
+/* Table */
+ .data-table {
+     border-collapse: collapse;
+     font-size: 10px;
+     min-width: 537px;
+}
+ .data-table th, .data-table td {
+     border: 1px solid #e1edff;
+     padding: 5px 9px;
+     text-align: center;
+}
+ .data-table caption {
+     margin: 7px;
+}
+/* Table Header */
+ .data-table thead th {
+     background-color: #508abb;
+     color: #FFFFFF;
+     border-color: #6ea1cc !important;
+     text-transform: uppercase;
+}
+/* Table Body */
+ .data-table tbody td {
+     color: #353535;
+}
+ .data-table tbody td:first-child, .data-table tbody td:nth-child(4), .data-table tbody td:last-child {
+     text-align: center;
+}
+ .data-table tbody tr:nth-child(odd) td {
+     background-color: #f4fbff;
+}
+ .data-table tbody tr:hover td {
+     background-color: #ffffa2;
+}
+/* Table Footer */
+ .data-table tfoot th {
+     background-color: #e5f5ff;
+     text-align: right;
+}
+ .data-table tfoot th:first-child {
+     text-align: left;
+}
+ .data-table tbody td:empty {
+     background-color: #ffcccc;
+}
