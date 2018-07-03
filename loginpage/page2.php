@@ -100,7 +100,7 @@
     <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(51, 51, 51);">
     </div>
     <div class="container">
-        <h2 class="mbr-white align-center pb-5 mbr-fonts-style mbr-bold display-5">You can analyse the data through these Intuitive Graph!</h2>
+        <h2 class="mbr-white align-center pb-5 mbr-fonts-style mbr-bold display-5">You can analyse the data through these Graphs!</h2>
         <div class="media-container-row">
             <div class="col-12 col-md-8">
                 <ul class="nav nav-tabs" role="tablist">
@@ -128,7 +128,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                    Mobirise is an easy website builder - just drop site elements to your page, add content and style it to look the way you like.
+                                    You can view a live chart of Temperature, Turbidity & pH fetched through the database.
                                 </p>
                             </div>
                         </div>
@@ -137,7 +137,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                    Mobirise offers many site blocks in several themes, and though these blocks are pre-made, they are flexible. You can combine blocks in different ways on your pages.
+                                    You can view a live chart of Temperature, Turbidity & pH fetched through the database.
                                 </p>
                             </div>
                         </div>
@@ -156,7 +156,9 @@
      
 
     
-    
+    <iframe src="../ms.php" scrolling="no" frameborder="0">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
     <div class="container">
         <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">
             Violations <?php include('../tempPie.php'); ?>
@@ -244,7 +246,7 @@
 
 
 
-<form class ="form-inline" action="#table1" method="GET">
+<form class ="form-inline" action="#tabfocus" method="GET">
       <center>
         <div class="form-group">
           
@@ -314,7 +316,7 @@
             <div class="col-md-6"></div>
             <div class="col-md-6">
                 <div class="dataTables_filter">
-                  <label class="searchInfo mbr-fonts-style display-7">Search:</label>
+                  <label class="searchInfo mbr-fonts-style display-7" id="tabfocus">Search:</label>
                   <input class="form-control input-sm" disabled="">
                 </div>
             </div>
@@ -525,32 +527,32 @@
                 <div class="col-md-6">
                     <div class="social-list align-right">
                         <div class="soc-item">
-                            <a href="https://twitter.com/mobirise" target="_blank">
+                            <a href="https://twitter.com/" target="_blank">
                                 <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
                         <div class="soc-item">
-                            <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+                            <a href="https://www.facebook.com/pages//1616226671953247" target="_blank">
                                 <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
                         <div class="soc-item">
-                            <a href="https://www.youtube.com/c/mobirise" target="_blank">
+                            <a href="https://www.youtube.com/c/" target="_blank">
                                 <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
                         <div class="soc-item">
-                            <a href="https://instagram.com/mobirise" target="_blank">
+                            <a href="https://instagram.com/" target="_blank">
                                 <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
                         <div class="soc-item">
-                            <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+                            <a href="https://plus.google.com/u/0/+" target="_blank">
                                 <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
                         <div class="soc-item">
-                            <a href="https://www.behance.net/Mobirise" target="_blank">
+                            <a href="https://www.behance.net/" target="_blank">
                                 <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>

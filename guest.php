@@ -125,7 +125,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                    Mobirise is an easy website builder - just drop site elements to your page, add content and style it to look the way you like.
+                                    You can view a live chart of Temperature, Turbidity & pH fetched through the database.
                                 </p>
                             </div>
                         </div>
@@ -134,7 +134,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="mbr-text py-5 mbr-fonts-style display-7">
-                                    Mobirise offers many site blocks in several themes, and though these blocks are pre-made, they are flexible. You can combine blocks in different ways on your pages.
+                                    You can view a live chart of Temperature, Turbidity & pH fetched through the database.
                                 </p>
                             </div>
                         </div>
@@ -525,32 +525,32 @@
                 <div class="col-md-6">
                     <div class="social-list align-right">
                         <div class="soc-item">
-                            <a href="https://twitter.com/mobirise" target="_blank">
+                            <a href="https://twitter.com/" target="_blank">
                                 <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
                         <div class="soc-item">
-                            <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+                            <a href="https://www.facebook.com/pages//1616226671953247" target="_blank">
                                 <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
                         <div class="soc-item">
-                            <a href="https://www.youtube.com/c/mobirise" target="_blank">
+                            <a href="https://www.youtube.com/c/" target="_blank">
                                 <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
                         <div class="soc-item">
-                            <a href="https://instagram.com/mobirise" target="_blank">
+                            <a href="https://instagram.com/" target="_blank">
                                 <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
                         <div class="soc-item">
-                            <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+                            <a href="https://plus.google.com/u/0/+" target="_blank">
                                 <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>
                         <div class="soc-item">
-                            <a href="https://www.behance.net/Mobirise" target="_blank">
+                            <a href="https://www.behance.net/" target="_blank">
                                 <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social"></span>
                             </a>
                         </div>

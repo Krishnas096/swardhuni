@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "ec2-13-232-13-99.ap-south-1.compute.amazonaws.com:3306";
+$username = "krishna";
+$password = "Krishna@8081";
 $dbname = "temp_database";
 
 // Create connection
@@ -16,10 +16,10 @@ else
 {
     echo "<center><h6>Connected</h6></center>";
 }*/
-$minTemp=29;
-$maxTemp=31;
-$minPh=5.5;
-$maxPh=7;
+$minTemp=10;
+$maxTemp=30;
+$minPh=6.5;
+$maxPh=8.5;
 $maxTurb=100;
 
 

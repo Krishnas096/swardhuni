@@ -3,7 +3,35 @@
 echo "<head><meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1'>";
 
 ?>
+<script type="text/javascript">
 
+
+function myfn1(){  
+//alert("helloooooooooooooooooo")
+           //Gives out x coordinates of the table
+var a=document.getElementById('table1');
+var rec= a.getBoundingClientRect();
+var x=rec.left;
+console.log("inside",x);
+return x;
+
+/*var d=rec.y;
+console.log(c,d);
+//alert(c,d);
+var e= c+','+d;
+alert(e);
+console.log(e);
+return e;*/
+}
+
+function myfn2(){               //Gives out y coordinates of table
+var b=document.getElementById('table1');
+var rec1= b.getBoundingClientRect();
+var y=rec1.top;
+console.log(y-110)
+return (y-110);
+}
+</script>
 
  <?php
 
@@ -20,9 +48,9 @@ else
 
 $start_from = ($page - 1) * $record_per_page;
 
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "ec2-13-232-13-99.ap-south-1.compute.amazonaws.com:3306";
+$username = "krishna";
+$password = "Krishna@8081";
 $dbname = "temp_database";
 
 // Create connection
@@ -127,16 +155,16 @@ function sqlFunc($sqlStmt)
             echo "<tr>";
             echo "<td align=center>" . $row["datetime"] . "</td>";
             //Display temp values
-            if ($row["temperature"] >= 31) echo "<td style='background-color: red;' align=center>" . $row['temperature'] . "</td>";
-            else if ($row["temperature"] <= 29) echo "<td style='background-color: lightblue;' align=center>" . $row['temperature'] . "</td>";
+            if ($row["temperature"] >= 30) echo "<td style='background-color: red;' align=center>" . $row['temperature'] . "</td>";
+            else if ($row["temperature"] <= 10) echo "<td style='background-color: lightblue;' align=center>" . $row['temperature'] . "</td>";
             else echo "<td style='background-color: green;' align=center>" . $row['temperature'] . "</td>";
             //Display pH values
-            if ($row["pH"] >= 7) echo "<td style='background-color: red;' align=center>" . $row['pH'] . "</td>";
-            else if ($row["pH"] <= 7) echo "<td style='background-color: lightblue;' align=center>" . $row['pH'] . "</td>";
+            if ($row["pH"] > 8.5) echo "<td style='background-color: red;' align=center>" . $row['pH'] . "</td>";
+            else if ($row["pH"] <= 6.5) echo "<td style='background-color: lightblue;' align=center>" . $row['pH'] . "</td>";
             else echo "<td style='background-color: green;' align=center>" . $row['pH'] . "</td>";
             //Display Turbidity values
-            if ($row["Turbidity"] >= 40) echo "<td style='background-color: red;' align=center>" . $row['Turbidity'] . "</td>";
-            else if ($row["Turbidity"] <= 7) echo "<td style='background-color: lightblue;' align=center>" . $row['Turbidity'] . "</td>";
+            if ($row["Turbidity"] > 100) echo "<td style='background-color: red;' align=center>" . $row['Turbidity'] . "</td>";
+            else if ($row["Turbidity"] <= 50) echo "<td style='background-color: lightblue;' align=center>" . $row['Turbidity'] . "</td>";
             else echo "<td style='background-color: green;' align=center>" . $row['Turbidity'] . "</td>";
 
             echo "</tr>";
@@ -148,7 +176,7 @@ function sqlFunc($sqlStmt)
     else
     {
         echo "<center><h1>Voila!</h1></center>
-        <center><h3>You are searching something which doesn't even exist.... yet</h3></center>";
+        <center><h3>You are searching something which doesn't exist.... yet</h3></center>";
         return;
 
     }
@@ -225,7 +253,7 @@ function sqlFunc($sqlStmt)
     echo "</div>                       
     <br /><br />
    </div>
-  </div>";				//The 3 divs are being closed here
+  </div>";              //The 3 divs are being closed here
 
 }
 
@@ -305,7 +333,7 @@ else if ($datequery1 == NULL && $tempQuery == NULL && $datequery2 == NULL && $ph
     $flag = true;
 }
 else
-{   echo "<center><h3>You are not even searching :( </h3></center>";
+{   //echo "<center><h3>You are not even searching :( </h3></center>";
     return;
 }
 
@@ -322,31 +350,3 @@ mysqli_close($conn);
 
 
 
-<script type="text/javascript">
-
-
-function myfn1(){  
-           //Gives out x coordinates of the table
-var a=document.getElementById('table1');
-var rec= a.getBoundingClientRect();
-var x=rec.x;
-console.log("inside",x);
-return x;
-
-/*var d=rec.y;
-console.log(c,d);
-//alert(c,d);
-var e= c+','+d;
-alert(e);
-console.log(e);
-return e;*/
-}
-
-function myfn2(){               //Gives out y coordinates of table
-var b=document.getElementById('table1');
-var rec1= b.getBoundingClientRect();
-var y=rec1.y;
-console.log(y-110)
-return (y-110);
-}
-</script>

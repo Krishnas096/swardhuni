@@ -45,7 +45,7 @@ $DB_HOST = 'localhost';
 
 /* Your Database User Name and Passowrd */
 $DB_USER = 'root';
-$DB_PASS = '';
+$DB_PASS = 'newpass';
 
 
 
